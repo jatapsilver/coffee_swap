@@ -3,7 +3,7 @@ import { Contract, BrowserProvider, JsonRpcSigner } from "ethers";
 import Web3Modal from "web3modal";
 import TokenFarmABI from "../abis/TokenFarm.json";
 
-export const TOKEN_FARM_ADDRESS = "0x5dADBe91cca895f25836748efF93fa4BffFeaf35";
+const TOKEN_FARM_ADDRESS = process.env.NEXT_PUBLIC_TOKEN_FARM_ADDRESS!;
 
 export async function getProviderOrSigner(
   needsSigner = false

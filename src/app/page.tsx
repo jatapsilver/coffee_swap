@@ -18,7 +18,7 @@ export default function Home() {
   const [isClaiming, setIsClaiming] = useState(false);
   const [isDistributing, setIsDistributing] = useState(false);
 
-  const TOKEN_FARM_ADDRESS = "0x5dADBe91cca895f25836748efF93fa4BffFeaf35";
+  const TOKEN_FARM_ADDRESS = process.env.NEXT_PUBLIC_TOKEN_FARM_ADDRESS!;
 
   const abbreviate = (addr: string) =>
     `${addr.slice(0, 6)}…${addr.slice(addr.length - 4)}`;
