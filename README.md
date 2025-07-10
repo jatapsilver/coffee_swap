@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Proyecto Modulo 5 - EthKipu
+coffeeSwap es una aplicación descentralizada (dApp) que permite a los usuarios ganar recompensas por hacer staking
 
-## Getting Started
+Url del contrato Token Farm
+https://sepolia.etherscan.io/address/0x5dADBe91cca895f25836748efF93fa4BffFeaf35
 
-First, run the development server:
+Url del contrato LPToken
+https://sepolia.etherscan.io/address/0xeAC3b0670509e58c88b6Dc2EB452007861FFA126
 
-```bash
+Url del contrato DAppToken
+https://sepolia.etherscan.io/address/0x5D9A986BD68406CCd50627067d073E900BEFBd61
+
+Instalacion
+Instala las dependencias del proyecto en cada carpeta
+
+npm install
+
+# o si usas yarn
+
+yarn install
+Ejecucion del proyecto
+Front en vercel : https://coffee-swap-two.vercel.app/
+
+Modo desarrollo en local front
 npm run dev
-# or
+
+# o si usas yarn
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Variables de entorno
+para poder ejecutar el deployment del contrato copia las variables en el .env.example y colors en tu archivo .env y ejecuta
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npx hh compile
+npx hh ignition deploy ignition/modules/deploy.ts --network sepolia --verify
+Script del contrato
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Authors
+@jatapsilver
